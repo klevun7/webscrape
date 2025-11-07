@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 class QuotesParser:
 
     def parse_quotes_page(self, html: str, base_url: str) -> List[Dict]:
-        soup = BeautifulSoup(html, 'html_parser')
+        soup = BeautifulSoup(html, 'html.parser')
         quotes = []
 
         quote_divs = soup.find_all('div', class_ = "quote")
