@@ -1,0 +1,7 @@
+[project]
+name = "books-scraper"
+version = "1.0.0"
+dependencies = [
+    "beautifulsoup4>=4.12.2",
+    "httpx>=0.25.0",
+]
