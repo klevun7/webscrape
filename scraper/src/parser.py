@@ -18,6 +18,7 @@ class QuotesParser:
                 if quote:
                     quotes.append(quote)
             except Exception as e:
+                logger.warning(f"Failed to parse quote: {e}")
                 continue
         return quotes
 
